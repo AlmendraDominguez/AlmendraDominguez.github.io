@@ -1,21 +1,8 @@
-* {
-    background-color:;
-}
+
 .myNav img {
     width: 90px;
     height: 60px;
     margin-left: 40px;
-}
-
-.mis-cards img {
-    display: block;
-    width: 100%;
-    line-height: 0;
-}
-
-.navbar {
-    display: block;
-    line-height: 0;
 }
 
 .mi-intro {
@@ -25,13 +12,23 @@
     background-size: cover;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
-    text-align: end;
 }
 
-.card-body {
+.miPrimerCard {
         text-align: end;
         width: 38%;
-        margin-right: 90px;
-        margin-top: 310px;
+        margin-right: 145px;
+        margin-top: 300px;
+}
+
+.miParrafo1 {
+    font-size: 14px;
+}
+.miParrafo2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container mis-cards {
+    height: auto;
 }
