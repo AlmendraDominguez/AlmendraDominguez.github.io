@@ -1,0 +1,37 @@
+* {
+    background-color:;
+}
+.myNav img {
+    width: 90px;
+    height: 60px;
+    margin-left: 40px;
+}
+
+.mis-cards img {
+    display: block;
+    width: 100%;
+    line-height: 0;
+}
+
+.navbar {
+    display: block;
+    line-height: 0;
+}
+
+.mi-intro {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(./bootstrap/hawaii.jpg);
+    height: 700px;
+    background-position: 60% 45%;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: end;
+}
+
+.card-body {
+        text-align: end;
+        width: 38%;
+        margin-right: 90px;
+        margin-top: 310px;
+}

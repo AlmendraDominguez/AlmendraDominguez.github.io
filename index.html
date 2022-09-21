@@ -4,16 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>MySpace</title>
+    <style>
+        p.myFooter {
+            justify-content: center;
+            display: inline;
+        }
+
+        .card-title a {
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            justify-content: center;
+            justify-items: center;
+        }
+
+    </style>
 </head>
 <body>
+
+    <header>
+        <h1>Bienvenido a MySpace</h1>
+    </header>
+    <br>
     <main>
-        <section>
-            <h1>
-                Github Page Codo a Codo
-            </h1>
+        <section class="container-fluid">
+            <h2>Por favor, seleccione la opción que desea visualizar</h2>
+        </section>
+
+        <section class="container-fluid">
+            <div class="row">
+                    <div class="card col-5 m-5 p-1">
+                        <img class="card-img-top" src="./undraw_team_up_re_84ok.svg">
+                        <div class="card-header">
+                            <h4 class="card-title text-secondary"><a href="./TrabajoIntegrador.html">Trabajo Integrador</a></h4>
+                        </div>
+                    </div>
+                    <div class="card col-5 m-5 p-1">
+                        <img class="card-img-top" src="./undraw_team_up_re_84ok.svg">
+                        <div class="card-header">
+                            <h4 class="card-title text-secondary"><a href="./ActividadObligatria.html">Actividad Obligatoria</a></h4>
+                        </div>
+                    </div>
+            </div>
         </section>
     </main>
-    
+    <footer>
+        <section class="container-fluid">
+            <p class="myFooter">En caso de consultas, o reclamos, por favor dirijase a nuestra oficina de atencion al cliente o envie un mail a 
+            <a href="mailto:almendradominguez97@gmail.com?subject=Consulta/Reclamo">almendradominguez97@gmail.com</a></p>
+        </section>
+    </footer>
 </body>
 </html>
