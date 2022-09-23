@@ -1,0 +1,58 @@
+
+.myNav img {
+    width: 90px;
+    height: 60px;
+    margin-left: 40px;
+}
+
+.mi-intro {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(./bootstrap/hawaii.jpg);
+    height: 700px;
+    background-position: 60% 45%;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.miPrimerCard {
+        text-align: end;
+        width: 38%;
+        margin-right: 145px;
+        margin-top: 300px;
+}
+
+.miParrafo1 {
+    font-size: 14px;
+}
+.miParrafo2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container mis-cards {
+    height: auto;
+}
+
+.dotted {
+    text-decoration:underline;
+text-decoration-style: dotted;
+}
+
+.footer {
+    background-color: rgba(30,79,109,255);
+}
+
+.miBoton {
+    background-color: rgba(150,201,62,255);
+}
+
+.miBoton:hover {
+    background-color: rgba(150,201,150,255);
+}
+
+.miFooter {
+    text-decoration: none;
+}
+.miFooter:hover {
+    font-size: 1.1em;
+}
