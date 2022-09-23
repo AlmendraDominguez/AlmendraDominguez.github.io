@@ -32,3 +32,27 @@
 .container mis-cards {
     height: auto;
 }
+
+.dotted {
+    text-decoration:underline;
+text-decoration-style: dotted;
+}
+
+.footer {
+    background-color: rgba(30,79,109,255);
+}
+
+.miBoton {
+    background-color: rgba(150,201,62,255);
+}
+
+.miBoton:hover {
+    background-color: rgba(150,201,150,255);
+}
+
+.miFooter {
+    text-decoration: none;
+}
+.miFooter:hover {
+    font-size: 1.1em;
+}
