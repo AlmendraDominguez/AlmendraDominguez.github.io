@@ -5,6 +5,10 @@
     margin-left: 40px;
 }
 
+.mis-cards {
+    flex-direction: row;
+}
+
 .mi-intro {
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(./bootstrap/hawaii.jpg);
     height: 700px;
@@ -41,6 +45,7 @@ text-decoration-style: dotted;
 
 .footer {
     background-color: rgba(30,79,109,255);
+    height: 60px;
 }
 
 .miBoton {
@@ -56,4 +61,36 @@ text-decoration-style: dotted;
 }
 .miFooter:hover {
     font-size: 1.1em;
+}
+
+@media only screen and (max-width: 780px) {
+  
+    .miPrimerCard {
+        width: 50%;
+        margin-top: 150px;
+        justify-content: center;
+        text-align: center;
+    }
+    .mis-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .footer {
+        flex-direction: column;
+        height: 200px;
+        text-align: center;
+    }
+    .miFooter:hover {
+        font-size: 1.1em;
+    }
+
+    .honolulu {
+        flex-direction: column;
+        width: 100%;
+    }
+    
 }
