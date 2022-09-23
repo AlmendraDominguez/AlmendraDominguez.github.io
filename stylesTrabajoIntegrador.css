@@ -12,6 +12,7 @@
     background-size: cover;
     display: flex;
     align-items: flex-end;
+    background-color: black;
 }
 
 .miPrimerCard {
