@@ -12,7 +12,7 @@
 <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
             <div class="container-fluid myNav ms-5">
-                <img src="./bootstrap/codoacodo.png">
+                <img src="./bootstrap/codoacodo.png" class="imagen-intro">
               <a class="navbar-brand col-4 me-5 pe-5" href="#">Conf Bs As</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,13 +23,13 @@
                     <a class="nav-link text-white" href="#">La conferencia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Los oradores</a>
+                    <a class="nav-link" href="#oradores">Los oradores</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">El lugar y la fecha</a>
+                    <a class="nav-link" href="#lugar">El lugar y la fecha</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Conviértete en orador</a>
+                    <a class="nav-link" href="#inscribirme">Conviértete en orador</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-success" href="#">Comprar tickets</a>
@@ -41,7 +41,7 @@
 
     <main>
       <section class="container-fluid p-0 m-0 col-md-12">
-          <div class="card mi-intro">
+          <div class="row card mi-intro">
               <div class="card-body miPrimerCard">
                   <h2 class="text-white">Conf Bs As</h2>
                   <p class="card-text text-white">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia
@@ -54,54 +54,56 @@
           </div>
       </section>
       <br>
-      <section>
-        <section>
+      <section class="container-fluid">
           <div>
-            <p class="text-center miParrafo1 my-0">CONOCE A LOS</p>
+            <p class="text-center miParrafo1 my-0"><a name="oradores">CONOCE A LOS</a></p>
             <p class="text-center miParrafo2">ORADORES</p>
           </div>
-        </section>
-
-        <section class="container mis-cards d-flex justify-content-center">
-          <div class="card mx-4 col-sm-12 col-lg-4">
-            <img src="./bootstrap/steve.jpg" class="card-img-top" style="height: 431px;">
-            <div class="card-body">
-              <button type="button" class="btn btn-warning btn-sm text-dark badge">JavaScript</button>
-              <button type="button" class="btn btn-info btn-sm text-white badge">React</button>
-              <h4 class="card-title">Steve Jobs</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur qui dolores illum alias cupiditate eos, doloribus assumenda, aspernatur iure aut voluptatum dolore expedita inventore optio non mollitia. Explicabo, delectus?</p>
-            </div>
-          </div>
-
-          <div class="card col-sm-12 col-lg-4">
-            <img class="card-img-top" src="./bootstrap/bill.jpg">
-            <div class="card-body">
-              <button type="button" class="btn btn-warning btn-sm text-dark badge">JavaScript</button>
-              <button type="button" class="btn btn-info btn-sm text-white badge">React</button>
-              <h4>Bill Gates</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur qui dolores illum alias cupiditate eos, doloribus assumenda, aspernatur iure aut voluptatum dolore expedita inventore optio non mollitia. Explicabo, delectus?</p>
-            </div>
-          </div>
-
-          <div class="card mx-4 col-sm-12 col-lg-4">
-            <img class="card-img-top" src="./bootstrap/ada.jpeg" style="height: 430px;">
-            <div class="card-body">
-              <button type="button" class="btn btn-secondary btn-sm text-white badge">Negocios</button>
-              <button type="button" class="btn btn-danger btn-sm text-white badge">Starups</button>
-              <h4>Ada Lovelace</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rem deserunt distinctio odio, obcaecati nam, non officia voluptas facere perferendis sunt hic illum dicta et fuga, sint inventore commodi ullam.</p>
-            </div>
-          </div>
-        </section>
       </section>
+
+          <section class="container">
+            <div class="row mi-row justify-content-center">
+              <div class="card-group justify-content-lg-center align-content-sm-center">
+                <div class="card steve-jobs">
+                  <img src="./bootstrap/steve.jpg" class="card-img-top steve-foto" style="height: 431px;">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-warning btn-sm text-dark badge">JavaScript</button>
+                    <button type="button" class="btn btn-info btn-sm text-white badge">React</button>
+                    <h4 class="card-title">Steve Jobs</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur qui dolores illum alias cupiditate eos, doloribus assumenda, aspernatur iure aut voluptatum dolore expedita inventore optio non mollitia. Explicabo, delectus?</p>
+                  </div>
+                </div>
+
+                <div class="card bill-gates">
+                  <img class="card-img-top bill-foto" src="./bootstrap/bill.jpg">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-warning btn-sm text-dark badge">JavaScript</button>
+                    <button type="button" class="btn btn-info btn-sm text-white badge">React</button>
+                    <h4>Bill Gates</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur qui dolores illum alias cupiditate eos, doloribus assumenda, aspernatur iure aut voluptatum dolore expedita inventore optio non mollitia. Explicabo, delectus?</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top ada-foto" src="./bootstrap/ada.jpeg" style="height: 430px;">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-secondary btn-sm text-white badge">Negocios</button>
+                    <button type="button" class="btn btn-danger btn-sm text-white badge">Starups</button>
+                    <h4>Ada Lovelace</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rem deserunt distinctio odio, obcaecati nam, non officia voluptas facere perferendis sunt hic illum dicta et fuga, sint inventore commodi ullam.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
       <br><br>
 
-      <section class="container-fluid honolulu d-flex m-lg-0 p-lg-0">
-          <div class="img col-lg-6 col-md-12">
-            <img src="./bootstrap/honolulu.jpg" class="imagen col-lg-7 col-md-12 col-sm-12 m-0" style="width: 100%;height: 500px; border: white solid 1px;">
+      <section class="honolulu d-flex">  <a name="lugar"></a>
+          <div class="img col-12 col-xl-6 col-lg-12 col-sm-12">
+            <img src="./bootstrap/honolulu.jpg" class="imagen col-xl-6 col-sm-12 col-lg-12 col-12" style="width: 100%;height: 500px; border: white solid 1px;">
           </div>
 
-          <div class="col-lg-6 p-lg-4 m-sm-0 p-sm-2" style="background-color: rgba(53,58,64,255);border: white solid 1px;">
+          <div class="honolulu-text" style="background-color: rgba(53,58,64,255);border: white solid 1px; padding: 10px;">
             <h2 class="text-white">Bs As - Octubre</h2>
             <p class="text-white">Buenos Aires es la provincia y localidad más grande del estado de Argentina
                                   en los Estados Unidos. Honolulu es la más sureña de entre las principales 
@@ -118,7 +120,7 @@
       <section class="container">
         <div class="row">
           <div>
-            <p class="text-center miParrafo1 my-0">Conviértete en un</p>
+            <p class="text-center miParrafo1 my-0"><a name="inscribirme">Conviértete en un</a></p>
             <p class="text-center miParrafo2">ORADOR</p>
             <p class="text-center">Anótate como orador para dar una <span class="dotted">charla ignite</span>. Cuéntanos de que quiere hablar!</p>
           </div>
