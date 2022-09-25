@@ -60,67 +60,46 @@ text-decoration-style: dotted;
     font-size: 1.1em;
 }
 
-@media(max-width: 576px) {
-    .card-group {
-      flex-wrap: wrap;
-    }
-    .miPrimerCard {
-        text-align: center;
-        width: 100%;
-    }
-
-    .footer {
-        flex-direction: column;
-        height: 200px;
-        text-align: center;
-    }
-    .miFooter:hover {
-        font-size: 1.1em;
-    }
-
-    .honolulu {
-        flex-direction: column;
-        width: 100%;
-    }
-    .mi-row {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
+@media all and (max-width: 763px) {
+    .oradores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mi-row {
+  width: 95%;
 }
 
-@media(max-width: 767px) {
-    .miPrimerCard {
-        text-align: center;
-        width: 100%;
-    }
-    .mi-row {
-        margin-left: 20px !important;
-        margin-right: 10px !important;
-    }
+.miPrimerCard {
+    text-align: center;
+    width: 100%;
 }
 
-@media(max-width: 991px) {
-    .miPrimerCard {
-        text-align: center;
-        width: 100%;
-    }
-
-    .mi-row {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+.footer {
+    flex-direction: column;
+    height: 200px;
+    text-align: center;
 }
+.miFooter:hover {
+    font-size: 1.1em;
+}
+
+.honolulu {
+    flex-direction: column;
+    width: 100%;
+    display: block !important;
+
+}
+}
+
+
 @media (max-width: 1200px) {
-    .card-group {
-      flex-wrap: wrap;
-      display: inline-block;
+   
+    .miPrimerCard {
+        text-align: center;
+        width: 100%;
     }
-
     .honolulu {
         display: block !important;
-    }
-
-    .speakers {
-        flex-wrap: wrap;
     }
 }
