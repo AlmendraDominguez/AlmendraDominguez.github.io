@@ -10,7 +10,7 @@
 
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2 position-sticky top-0" style="z-index: 999">
             <div class="container-fluid myNav ms-5">
                 <img src="./bootstrap/codoacodo.png" class="imagen-intro">
               <a class="navbar-brand col-4 me-5 pe-5" href="#">Conf Bs As</a>
@@ -31,8 +31,8 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#inscribirme">Conviértete en orador</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-success" href="#">Comprar tickets</a>
+                  <li class="nav-item" onclick="tickets()">
+                    <a class="nav-link text-success" href="#comprar">Comprar tickets</a>
                   </li>
                 </ul>
               </div>
@@ -45,7 +45,7 @@
               <div class="card-body miPrimerCard">
                   <h2 class="text-white">Conf Bs As</h2>
                   <p class="card-text text-white">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia
-                      de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y 
+                      de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y
                       los oradores de primer nivel que tenemos para ti. Te esperamos!
                   </p>
                   <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
@@ -107,7 +107,7 @@
           <div class="honolulu-text" style="background-color: rgba(53,58,64,255);border: white solid 1px; padding: 10px;">
             <h2 class="text-white">Bs As - Octubre</h2>
             <p class="text-white">Buenos Aires es la provincia y localidad más grande del estado de Argentina
-                                  en los Estados Unidos. Honolulu es la más sureña de entre las principales 
+                                  en los Estados Unidos. Honolulu es la más sureña de entre las principales
                                   ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área
                                   urbana en la costa sureste de la isla de Oahu, la ciudad y el condado
                                   de Honolulu han formado una ciudad-condado consolidada que cubre toda
@@ -147,17 +147,27 @@
 
       </section>
       <br>
+
+      <section class="container"> <a name="comprar"></a>
+        <div class="row">
+          <div id="comprarTicket"></div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer d-flex justify-content-evenly p-3">
-      <a href="#" class="miFooter text-white">Preguntas frecuentes</a> 
-      <a href="#" class="miFooter text-white">Contáctenos</a> 
-      <a href="#" class="miFooter text-white">Prensa</a> 
-      <a href="#" class="miFooter text-white">Conferencias</a> 
-      <a href="#" class="miFooter text-white">Términos y condiciones</a> 
-      <a href="#" class="miFooter text-white">Privacidad</a> 
+      <a href="#" class="miFooter text-white">Preguntas frecuentes</a>
+      <a href="#" class="miFooter text-white">Contáctenos</a>
+      <a href="#" class="miFooter text-white">Prensa</a>
+      <a href="#" class="miFooter text-white">Conferencias</a>
+      <a href="#" class="miFooter text-white">Términos y condiciones</a>
+      <a href="#" class="miFooter text-white">Privacidad</a>
       <a href="#" class="miFooter text-white">Estudiantes</a>
     </footer>
- 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./tickets.js"></script>
+    <!-- <script src="./script.js"></script> -->
+
 </body>
 </html>
