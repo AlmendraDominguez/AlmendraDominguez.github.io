@@ -50,25 +50,26 @@ function tickets() {
 <div class="row">
     <div class="cantidad col mt-3 px-0">
         <label for="basic-url" class="form-label col">Cantidad</label>
-        <input type="text" class="form-control col" placeholder="Cantidad" aria-label="Cantidad">
+        <input type="text" class="form-control col" placeholder="Cantidad" aria-label="Cantidad" id="cantidadTest">
     </div>
     <div class="categoria col mt-3 ps-4 pe-0">
         <label for="basic-url" class="form-label col">Categoria</label>
-        <select class="form-select col pe-0" aria-label="Default select example">
-            <option selected value="1">Estudiante</option>
-            <option value="2">Trainee</option>
-            <option value="3">Junior</option>
+        <select class="form-select col pe-0" aria-label="Default select example" id="categoriaTest">
+            <option selected value="40">Estudiante</option>
+            <option value="100">Trainee</option>
+            <option value="170">Junior</option>
         </select>
     </div>
 </div>
 <div class="row mt-4">
-    <p class="border rounded p-2" style="background-color: rgba(204,229,255,255); height: 45px;">Total a pagar: $</p>
-</div>
+<p class="border rounded p-2" style="background-color: rgba(204,229,255,255); height: 45px;">Total a pagar: $
+<span id="resumen" class="montoTotal"></span>
+</p></div>
 
 <div class="row my-4">
     <button type="button" class="btn miBoton text-white col me-3" style="background-color: rgba(150,201,62,255)">Borrar</button>
     
-    <button type="button" class="btn miBoton text-white col ms-2" style="background-color: rgba(150,201,62,255)">Resumen</button>
+    <button type="button" class="btn miBoton text-white col ms-2" style="background-color: rgba(150,201,62,255)" onclick="categoria()">Resumen</button>
 </div>
 </form>`;
 
