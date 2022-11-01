@@ -33,24 +33,24 @@ function tickets() {
 </section>
 <section class="container">
 <div class="row d-flex justify-content-center">
-<form>
+<form id="myForm">
 <div class="row text-center">
     <p>VENTA</p>
     <h1>VALOR DE TICKET $200</h1>
 </div>
 
 <div class="row">
-    <input type="text" style="width: auto;" class="form-control col me-4" placeholder="Nombre" aria-label="Nombre">
+    <input type="text" style="width: auto;" class="form-control col me-4" placeholder="Nombre" aria-label="Nombre" required>
 
-    <input type="text" style="width: auto;" class="form-control col" placeholder="Apellido" aria-label="Apellido">
+    <input type="text" style="width: auto;" class="form-control col" placeholder="Apellido" aria-label="Apellido" required>
 </div>
 <div class="row mt-4">
-    <input type="text" class="form-control" placeholder="Correo" aria-label="Correo">
+    <input type="text" class="form-control" placeholder="Correo" aria-label="Correo" required>
 </div>
 <div class="row">
     <div class="cantidad col mt-3 px-0">
         <label for="basic-url" class="form-label col">Cantidad</label>
-        <input type="text" class="form-control col" placeholder="Cantidad" aria-label="Cantidad" id="cantidadTest">
+        <input type="text" class="form-control col" placeholder="Cantidad" aria-label="Cantidad" id="cantidadTest" required>
     </div>
     <div class="categoria col mt-3 ps-4 pe-0">
         <label for="basic-url" class="form-label col">Categoria</label>
@@ -67,9 +67,9 @@ function tickets() {
 </p></div>
 
 <div class="row my-4">
-    <button type="button" class="btn miBoton text-white col me-3" style="background-color: rgba(150,201,62,255)">Borrar</button>
+    <button type="button" class="btn miBoton text-white col me-3" style="background-color: rgba(150,201,62,255)" onclick="reset()">Borrar</button>
     
-    <button type="button" class="btn miBoton text-white col ms-2" style="background-color: rgba(150,201,62,255)" onclick="categoria()">Resumen</button>
+    <button type="submit" class="btn miBoton text-white col ms-2" style="background-color: rgba(150,201,62,255)" onclick="categoria()">Resumen</button>
 </div>
 </form>`;
 

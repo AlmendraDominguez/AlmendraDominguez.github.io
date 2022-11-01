@@ -7,3 +7,7 @@ function categoria() {
     const resumen = valueCategoria * valueCantidad;
     resumenFinal.innerHTML = resumen;
 }
+
+function reset() {
+    document.getElementById("myForm").reset();
+}
